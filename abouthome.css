@@ -1,0 +1,188 @@
+*{
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+}
+section{
+    padding: 5%;
+}
+#about{
+    background: url(assets/chicken.jpg);
+    text-align: center;
+    height: 50vh;
+    background-color: aqua;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    color: white;
+    padding: 5% 10%;
+    align-items: center;
+}
+#about h1{
+    font-size: 60px;
+}
+#about p{
+    font-size: 20px;
+}
+#hero img{
+    height: 400px;
+    width: 100%;
+    border-radius: 8px;
+}
+#hero{
+    display: flex;
+    gap: 5%;
+    padding: 5%;
+    flex-direction: row;
+}
+#hero div{
+    width: 47%;
+}
+#hero div:first-of-type{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#hero .curve{
+    color: orange;
+    font-style: italic;
+}
+#time{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    text-align: center;
+}
+#time hr{
+    height: 5px;
+    background-color: orange;
+    width: 90%;
+    position: absolute;
+    top: 100px;
+    z-index: -2;
+}
+#time p:first-of-type{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    color: white;
+    font-size: 25px;
+}
+#gallery{
+    display: flex;
+    justify-content: space-between;
+}
+#gallery #second article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#gallery>div{
+    width: 48%;
+}
+#gallery #second article div{
+    width: 32%;
+}
+#gallery #second article div img{
+    width: 100%;
+    height: 130px;
+    border-radius: 10px;
+}
+#gallery #first div{
+    display: flex;
+}
+#gallery #first div article{
+    width: 48%;
+}
+#gallery #first div img{
+    height: 300px;
+    width: 100%;
+}
+#gallery h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+#gallery .text{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#area{
+    display: flex;
+    justify-content: space-between;
+}
+#area #ball div{
+    margin-top: 15px;
+}
+#area #bell #full{
+    width: 100%;
+}
+#area textarea{
+    width: 100%;
+    padding: 10px 20px;
+}
+#area #big{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#bell button{
+    background-color: orange;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+@media(max-width: 500px){
+    #about{
+        padding: 15% 10%;
+    }
+    #hero{
+        flex-direction: column;
+    }
+    #hero div{
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    #time{
+        display: none;
+    }
+    #gallery{
+        display: block;
+    }
+    #gallery h3{
+       flex-direction: column;
+       display: flex;
+    }
+    #gallery #first article{
+        align-items: center;
+    }
+    #gallery #first .text{
+        text-align: center;
+        flex-direction: column;
+    }
+    #ball>div div:first-of-type{
+        border-right: none;
+    }
+    #gallery #second article{
+        display: block;
+    }
+    #gallery #second article div img{
+        display: flex;
+    }
+    #gallery #area #ball h2{
+        text-align: center;
+    }
+}
+

@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+}
+#hero{
+    height: 250px;
+    text-align: center;
+    background-color: aqua;
+    background: url(assets/chicken.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding: 90px 20px
+}
+.container{
+    display: flex;
+    gap: 10%;
+    text-align: center;
+    margin-left: 20%;
+    margin-top: 10px;
+}
+.container .filter:hover{
+    transform: scale(0.9, 0.9);
+    transition: 1s linear 0s transform;
+}
+.container button{
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: orange;
+    border: none;
+}
+.pills{
+    text-align: center;
+    margin-top: 20px;
+}
+#body{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.cheap h3, p, h3{
+    margin-left: 20px;
+}
+#body img{
+    height: 300px;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+#body div{
+    width: 31%;
+    background-color: burlywood;
+    border-radius: 5%;
+}
+
+#body h3 p{
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+#body .cheap{
+   margin-bottom: 20px;
+}
+.chef{
+    height: 250px;
+    background-color: aqua;
+    background: url(assets/rice.jpg);  
+    color: black;
+    margin-top: 15px; 
+    background-position: right;
+    background-size: cover;
+}
+.chef h1{
+    margin-left: 20px;
+}
+.chef h2{
+   margin-left: 20px;
+   margin-top: 10px;
+}
+.chef p{
+    display: flex;
+    margin-left: 20px;
+}
+.chef h3{
+    margin-left: 20px
+} 
+.btn{
+    display: flex;  
+    background-color: orange;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: orange;
+    border: none;
+    margin-left: 20px;
+}
+@media(max-width: 500px){
+   #body{
+    flex-direction: column;
+   }
+   #body .cheap{
+    height: 300px;
+    width: 100%;
+    margin-bottom: 90px;
+   }
+
+}
